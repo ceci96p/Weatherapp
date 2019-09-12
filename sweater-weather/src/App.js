@@ -26,19 +26,20 @@
 // export default App;
 
 import React from 'react';
+import Titles from './components/titles.js';
+import Form from './components/form.js';
+import Weather from './components/weather.js';
 
-class App extends React.Component {
-  render() {
+
+  class App extends React.Component {
+   render() {
     return (
-      <div>
-       <Titles/>
-       <Form />
-       <Weather />
-       
-       </div>
-    )
+     <div>
+      <Titles />
+      <Form />
+      <Weather />
+     </div>
+    ) 
   }
 }
-
-      
 export default App;
