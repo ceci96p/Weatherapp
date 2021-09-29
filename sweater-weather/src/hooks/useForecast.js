@@ -16,10 +16,11 @@ const useForecast = () => {
         if (!data || data.length === 0){
             // set on error
             setError("There is no such location");
+            setLoading("false");
             return;
         }
 
-        return data;
+        return data[0];
     }
 
     const getForecastData = async(woeid) => {
@@ -27,12 +28,12 @@ const useForecast = () => {
 
         if(!data || data.length === 0){
             setError("Something went wrong");
+            setLoading("false");
             return;
         }
 
         return data[0];
     }
-
 
 
     //call api
@@ -43,7 +44,9 @@ const useForecast = () => {
         if (!response?.woeid) return;
 
         const data = await getForecastData(response[0].woeid);
+        if (!data) return;
 
+        
         //console.log({data});
         
 
