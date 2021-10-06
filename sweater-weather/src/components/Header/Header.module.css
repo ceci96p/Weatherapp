@@ -1,4 +1,8 @@
 .heading {
+    display: flex;
+    flex-direction: column;
+    
+
     padding: 2rem;
     text-align: center;
     font-weight: 900;
@@ -6,5 +10,10 @@
 }
 
 .light {
+    display: flex;
+    flex-direction: column;
+    
+
     font-weight: 100;
 }
+
