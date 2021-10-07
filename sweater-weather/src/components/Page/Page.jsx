@@ -10,8 +10,10 @@ import useForecast from '../../hooks/useForecast';
 
 import styles from './Page.module.css';
 
+import Map from '../Map/Map';
+
 const Page = () => {
-    const {isError, isLoading, forecast, submitRequest} = useForecast();
+    const {isError, isLoading, forecast, coordinates, submitRequest} = useForecast();
 
     const onSubmit = (value) => {
         submitRequest(value);
@@ -38,6 +40,9 @@ const Page = () => {
                 </div>
                 <div className={`${styles.container} position-relative`}>
                     {forecast && <Forecast forecast={forecast}/>}
+                </div>
+                <div className={`${styles.container} position-relative`}>
+                    {forecast && <Map coordinates={coordinates}/>}
                 </div>
                 
             </div>
