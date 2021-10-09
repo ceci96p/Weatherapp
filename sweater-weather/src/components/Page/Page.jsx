@@ -44,9 +44,12 @@ const Page = () => {
                 <div className={`${styles.container} position-relative`}>
                     {forecast && <Map coordinates={coordinates}/>}
                 </div>
-                
             </div>
              )}
+
+            
+
+
              
             
             {/* {forecast && <Forecast forecast={forecast}/>} */}

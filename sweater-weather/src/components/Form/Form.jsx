@@ -32,7 +32,6 @@ const Form = ({submitSearch}) => {
 };
 
 Form.propTypes = {
-    //submitSearch: PropTypes.func.isRequired,
     submitSearch: PropTypes.func.isRequired,
 };
 
