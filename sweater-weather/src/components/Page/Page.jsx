@@ -39,11 +39,11 @@ const Page = () => {
                     {forecast && <Form submitSearch={onSubmit}/>}
                 </div>
                 <div className={`${styles.container} position-relative`}>
-                    {forecast && <Forecast forecast={forecast}/>}
+                    {forecast && <Forecast forecast={forecast} coordinates={coordinates}/>}
                 </div>
-                <div className={`${styles.container} position-relative`}>
+                {/* <div className={`${styles.container} position-relative`}>
                     {forecast && <Map coordinates={coordinates}/>}
-                </div>
+                </div> */}
             </div>
              )}
 

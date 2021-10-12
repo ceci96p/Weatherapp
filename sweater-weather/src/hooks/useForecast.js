@@ -10,8 +10,7 @@ import getCityCountry from "../helpers/getCityCountry";
 
 const BASE_URL = 'https://www.metaweather.com/api/location';
 const GEO_URL = 'https://nominatim.openstreetmap.org';
-const CROSS_DOMAIN = 'https://the-ultimate-api-challenge.herokuapp.com';
-//const CROSS_DOMAIN = 'https://murmuring-brook-68134.herokuapp.com/';
+const CROSS_DOMAIN = 'https://cecilia-m-cors.herokuapp.com';
 const REQUEST_URL = `${CROSS_DOMAIN}/${BASE_URL}`;
 const REQUEST_URL_MAP = `${CROSS_DOMAIN}/${GEO_URL}`;
 
@@ -115,7 +114,8 @@ const useForecast = () => {
         setLoading(true);
         setError(false);
         setForecast(null);
-        
+        setCoordinates(null);
+
         const response= await getWoeid(location);
         if (!response?.woeid) return;
 

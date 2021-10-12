@@ -2,9 +2,11 @@
 
 :root {
     --gradient: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
-    --bg-color: #343d4b;
-    --bg-color--card: #222831;
 
+    --bg-color: #343d4b;
+ 
+    --bg-color--card: #222831;
+    
     --main-text-color: #ffffff;
 
     --main-border-radius: 25px;

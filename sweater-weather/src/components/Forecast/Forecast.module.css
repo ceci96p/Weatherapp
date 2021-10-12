@@ -1,5 +1,6 @@
 .card {
     border-radius: var(--main-border-radius);
+    
 }
 
 .box {
@@ -8,7 +9,7 @@
     box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
     background-color: var(--bg-color--card);
     color: var(--main-text-color);
-    width: 90%;
-    max-width: 675px;
+    width: 100%;
+    max-width: 1000px;
     min-height: 300px;
 }

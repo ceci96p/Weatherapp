@@ -34,10 +34,16 @@ class Map extends Component {
       return Math.min(latZoom, lngZoom, ZOOM_MAX);
   }
 
-  const containerStyle = { width: '400px', height: '400px', borderRadius: '25px'};
+  const containerStyle = { height: '300px', width: '100%', maxwidth:'600px', borderRadius: '25px', position: 'absolute', paddingLeft: '0px'};
   const mapTypeId = "terrain";
-  const mapDim = { height: containerStyle.height.replace(/px/g,''), width: containerStyle.width.replace(/px/g,'') };
+  //const mapDim = { height: containerStyle.height.replace(/px/g,''), width: containerStyle.width.replace(/px/g,'') };
+  const mapDim = { height: '300', width: '400' };
   let zoomLevel = 5; //default value
+
+  if(document.getElementById("googlemap")){
+  let width = document.getElementById("googlemap").offsetWidth;
+  console.log("width: "  + width);
+  };
   
     const { coordinates } = this.props;
 
@@ -46,9 +52,11 @@ class Map extends Component {
 
       //REMOVE KEY BEFORE COMMITING TO GIT
       return (
+        <div id="map">
         <LoadScript
-          googleMapsApiKey="xxx"> 
+          googleMapsApiKey=""> 
           <GoogleMap
+          id="googlemap"
             mapContainerStyle = {containerStyle}
             center = {this.props.coordinates.centerCoordinates}
             zoom = {zoomLevel}
@@ -68,9 +76,12 @@ class Map extends Component {
               strokeWeight: 3}}/>
           </GoogleMap>
         </LoadScript>
+        </div>
       )
     }else{
-      return null;
+      return (
+        <div style={{width: '200px', height: '300px', borderRadius: '25px'}}></div>
+      )
     }
   }
 }
