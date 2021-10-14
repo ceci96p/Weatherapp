@@ -10,7 +10,7 @@ import useForecast from '../../hooks/useForecast';
 
 import styles from './Page.module.css';
 
-import Map from '../Map/Map';
+//import Map from '../Map/Map';
 
 const Page = () => {
     const {isError, isLoading, forecast, coordinates, submitRequest} = useForecast();
@@ -19,7 +19,6 @@ const Page = () => {
         submitRequest(value);
     };
 
-    
     return (
         <Fragment>
             <Header />
@@ -45,6 +44,9 @@ const Page = () => {
                     {forecast && <Map coordinates={coordinates}/>}
                 </div> */}
             </div>
+            
+
+            
              )}
 
             

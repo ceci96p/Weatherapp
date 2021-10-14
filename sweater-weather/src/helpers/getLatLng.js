@@ -4,7 +4,7 @@ function getLatLng(polygonType,coordinates){
     if (polygonType === "Polygon" ){
         coordinates.map((level1,index) => { 
             formattedCoordinates[index] = [];
-            level1.forEach((i) => {
+            return level1.forEach((i) => {
                 formattedCoordinates[index].push({ lat: parseFloat(`${i[1]}`), lng:parseFloat(`${i[0]}`)});
             })
         })
@@ -13,8 +13,8 @@ function getLatLng(polygonType,coordinates){
     if (polygonType === "MultiPolygon"){
         coordinates.map((level1,index) => { 
             formattedCoordinates[index] = [];
-            level1.map((level2) => { 
-                level2.forEach((i) => {
+            return level1.map((level2) => { 
+                return level2.forEach((i) => {
                     formattedCoordinates[index].push({ lat: parseFloat(`${i[1]}`), lng: parseFloat(`${i[0]}`)});
                 })
             })
