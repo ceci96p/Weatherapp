@@ -6,16 +6,16 @@ logs
 npm-debug.log*
 
 # dependencies
-/node_modules
-/.pnp
+sweater-weather/node_modules
+sweater-weather/.pnp
 .pnp.js
 
 # testing
-/coverage
+sweater-weather/coverage
 
 # production
-/build
-/public
+sweater-weather/build
+sweater-weather/public
 
 # misc
 .DS_Store
@@ -30,13 +30,13 @@ yarn-error.log*
 
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+sweater-weather/build/Release
 
 # Distribution directories
-dist/
+sweater-weather/dist/
 
 # Typescript v1 declaration files
-typings/
+sweater-weather/typings/
 
 # Optional npm cache directory
 .npm
