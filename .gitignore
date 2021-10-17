@@ -50,4 +50,6 @@ sweater-weather/typings/
 # Output of 'npm pack'
 *.tgz
 
+#VScode
+.vscode
 
