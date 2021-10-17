@@ -15,7 +15,7 @@ sweater-weather/coverage
 
 # production
 sweater-weather/build
-sweater-weather/public
+
 
 # misc
 .DS_Store
