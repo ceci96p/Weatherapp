@@ -61,7 +61,7 @@ class Map extends Component {
     //change hardcoded height if the map heigth is ever to change. This could could cause a bug in the future
     this.zoomLevel = this.getBoundsZoomLevel(this.props.coordinates.bounds, { height: 300, width:  dimensions.width});
 
-    //REMOVE KEY BEFORE COMMITING TO GIT
+    //REMOVE API KEY BEFORE COMMITING TO GIT
     return (
       <div>
         <LoadScript

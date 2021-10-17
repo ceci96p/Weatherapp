@@ -2,7 +2,7 @@ import Geocode from "react-geocode";
 
 const getCenter = async (city,country) => {
 
-    Geocode.setApiKey(""); //REMOVE BEFORE COMMITING TO GIT
+    Geocode.setApiKey(""); //REMOVE API KEY BEFORE COMMITING TO GIT
     
     const response = await Geocode.fromAddress(city + " " + country);
 
