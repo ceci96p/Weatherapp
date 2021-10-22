@@ -65,7 +65,7 @@ class Map extends Component {
     return (
       <div>
         <LoadScript
-          googleMapsApiKey=""> 
+          googleMapsApiKey={process.env.REACT_APP_GMAPSJS}> 
           <GoogleMap
           id="google-map"
             mapContainerStyle = {this.containerStyle}
@@ -73,8 +73,6 @@ class Map extends Component {
             zoom = {this.zoomLevel}
             mapTypeId = {this.mapTypeId}
             >
-            {/* yesIWantToUseGoogleMapApiInternals //this is important!
-            onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}  */}
             
             <Polygon
               paths={this.props.coordinates.poligonCoordinates}
@@ -90,14 +88,13 @@ class Map extends Component {
        
       </div>
     );
-  
 }
 
   render() {
     const { coordinates } = this.props;
     const { dimensions } = this.state;
       return (
-        <div id="map" ref={el => (this.container = el)} >
+        <div id="map" ref={el => (this.container = el)} style={this.containerStyle} >
         {dimensions &&  coordinates && this.renderContent()}
         </div>
       )
