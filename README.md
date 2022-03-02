@@ -10,27 +10,28 @@ https://cm-sweater-weather-app.herokuapp.com/
 
   1. Make sure you have Node.js and npm installed.
 
-  2. Open terminal and change directory into the project
+  2. Open terminal and change directory into the project.
   
   	… 
   	
   	cd Weatherapp
 
-  3. Download all project dependencies 
-	  npm install
+  3. Download all project dependencies.
+  	npm install
+	  
+  4. Start node server/server.js.
+  	npm start
 
-  4. Start node server/server.js
-	  npm start
+  5. Open new terminal window without closing the previous one and again go into the project.
+  	…
+	
+	cd Weatherapp
 
-  5. Open new terminal window without closing the previous one and again go into the project
-	  …
-	  cd Weatherapp
+  6. In this new terminal create a new production build.
+  	npm run build
 
-  6. In this new terminal create a new production build 
-	  npm run build
-
-  7. Open browser to port 3000
-	  http://localhost:3000
+  7. Open browser to port 3000.
+  	http://localhost:3000
 
 ## Tech Stack:
 
