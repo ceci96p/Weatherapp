@@ -33,18 +33,18 @@ https://cm-sweater-weather-app.herokuapp.com/
 ## Tech Stack:
 
   Core:
-    - ReactJS
-    - Hooks
-    - CSS
-
-	Communication:
-    - Axios
-	  - CORS Anywhere
-
-	Hosting:
-   - Heroku 
-
-	API:
+  - ReactJS
+  - Hooks
+  - CSS
+  
+  Communication:
+  - Axios
+  - CORS Anywhere
+  
+  Hosting:
+  - Heroku
+  
+  API:
   - MetaWeather 
   - Google Maps 
   - Nominatim
