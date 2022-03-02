@@ -1,6 +1,6 @@
 # Sweater Weather
 
-![Screenshot example](/public/assets/ScreenshotExample)
+![Screenshot example](public/assets/ScreenshotExample)
  
 ## Project Description:
 Sweater Weather is a searchable weather app providing the most up-to-date weather forecast conditions, day of the week predictions and map location in a simple yet pleasant to the eyes UI.
