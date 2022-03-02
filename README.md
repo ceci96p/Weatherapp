@@ -11,7 +11,8 @@ https://cm-sweater-weather-app.herokuapp.com/
   1. Make sure you have Node.js and npm installed.
 
   2. Open terminal and change directory into the project
-  ``` … ```
+  <br />
+  ``` … ``` <br />
   ``` cd Weatherapp ```
 
   3. Download all project dependencies 
