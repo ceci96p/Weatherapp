@@ -20,7 +20,7 @@ https://cm-sweater-weather-app.herokuapp.com/
   	npm install
 	  
   4. Start node server/server.js.
-  	npm start
+ 	npm start
 
   5. Open new terminal window without closing the previous one and again go into the project.
   	…
