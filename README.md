@@ -12,9 +12,9 @@ https://cm-sweater-weather-app.herokuapp.com/
 
   2. Open terminal and change directory into the project
   
-  	``` … ```
+  	… 
   	<br />
-  	``` cd Weatherapp ```
+  	cd Weatherapp
 
   3. Download all project dependencies 
 	  npm install
