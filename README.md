@@ -35,7 +35,6 @@ https://cm-sweater-weather-app.herokuapp.com/
 	npm run build
 
   7. Open browser to port 3000.
-  <br />
   	http://localhost:3000
 
 ## Tech Stack:
